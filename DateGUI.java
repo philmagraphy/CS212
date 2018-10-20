@@ -143,9 +143,9 @@ public class DateGUI extends JFrame{
  */
      private static boolean valiDATEcheck(Date212 a) {
          if(a.getMonth() < 1 || a.getMonth() > 12) return false;
-         if(a.getMonth() == 2) return (a.getDay() <= 29);
-         if(a.getMonth() == 4 || a.getMonth() == 6 || a.getMonth() == 9 || a.getMonth() == 11) return (a.getDay() <= 30);
-         else return (a.getDay() <= 31);
+         if(a.getMonth() == 2) return (a.getDay() >= 1 && a.getDay() <= 29);
+         if(a.getMonth() == 4 || a.getMonth() == 6 || a.getMonth() == 9 || a.getMonth() == 11) return (a.getDay() >= 1 && a.getDay() <= 30);
+         else return (a.getDay() >= 1 && a.getDay() <= 31);
      }
      
 // showGUI
