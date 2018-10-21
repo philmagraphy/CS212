@@ -74,8 +74,7 @@ public class DateGUI extends JFrame{
     public void readDatesFromFileToGUI(String inputFileName) {
 
         // read input and tokenize into Date212 objects.
-        try {
-            BufferedReader dateReader = new BufferedReader(new FileReader(inputFileName));
+        try (BufferedReader dateReader = new BufferedReader(new FileReader(inputFileName))) {
             String inputLine;
             while((inputLine = dateReader.readLine()) != null) {
                 StringTokenizer st = new StringTokenizer(inputLine, ",", false);
