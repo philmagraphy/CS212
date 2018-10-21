@@ -87,7 +87,6 @@ public class DateGUI extends JFrame{
                     else System.out.println(tempToken);
                 }
             }
-            dateReader.close();
         }
         catch (IOException e) {
             e.printStackTrace();
