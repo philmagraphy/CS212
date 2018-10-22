@@ -16,7 +16,7 @@ import java.awt.GridLayout;
  * It also has methods to validate dates in Date212 objects, selection sort a Date212 arraylist, and to read input data through to its display in a GUI.
  * 
  * @author Phillip Ma
- * @since 2018-10-19
+ * @since 2018-10-22
  * for CS212
  * Professor Kenneth Lord
  * Lab Instructor Lin Zhao

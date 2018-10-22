@@ -5,7 +5,7 @@ package phillipma.project1;
  * It also defines some methods to get internal data members, compare objects, and convert to strings of type mm/dd/yyyy.
  * 
  * @author Phillip Ma
- * @since 2018-10-19
+ * @since 2018-10-22
  * for CS212
  * Professor Kenneth Lord
  * Lab Instructor Lin Zhao
@@ -16,13 +16,6 @@ public class Date212 {
     private int year;
     private int month;
     private int day;
-
-// default constructor for selection sort
-    public Date212() {
-        year = 1;
-        month = 1;
-        day = 1;
-    }
 
 // non-default constructor
     public Date212(String s) {
@@ -52,7 +45,7 @@ public class Date212 {
  * Second, if the years are the same, compares months.
  * Third, if the years and months are the same, compares days.
  * 
- * If all 3 checks do not return anything, then returns a false since a is not less than b in any part of the date. 
+ * If all 3 checks do not return anything, then returns false since a is not less than b in any part of the date. 
  */
     public static boolean aLessThanb(Date212 a, Date212 b) {
 
