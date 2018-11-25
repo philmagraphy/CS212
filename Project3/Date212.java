@@ -4,7 +4,7 @@ package phillipma.project3;
  * The Date212 class defines the objects that are created from the input file data.
  *
  * @author Phillip Ma
- * @since 2018-11-20
+ * @since 2018-11-24
  * for CS212
  * Professor Kenneth Lord
  * Lab Instructor Lin Zhao
@@ -59,7 +59,7 @@ public class Date212 {
  * e.g. Days: 4 becomes 04, 30 stays 30.
  */
     public String toString() {
-        String formatDate = String.format("%04d/%02d/%02d", year, month, day);
+        String formatDate = String.format("%02d/%02d/%04d", month, day, year);
         return formatDate;
     }
 
