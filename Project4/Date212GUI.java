@@ -20,7 +20,7 @@ import java.util.TreeMap;
  * The Integer values store how many instances of the respective Date212 objects are found in the input file.
  * 
  * @author Phillip Ma
- * @since 2018-11-21
+ * @since 2018-11-24
  * for CS212
  * Professor Kenneth Lord
  * Lab Instructor Lin Zhao
@@ -38,7 +38,7 @@ public class Date212GUI extends JFrame{
     // TreeMap uses Date212 objects as keys (since they are sortable), and Integer counts as values.
     // Given the nature of maps, duplicate values are stored as increments in the Integer count.
     private static UnsortedDate212List DateList = new UnsortedDate212List();
-    private static TreeMap<Date212, Integer> sortTreeMap = new TreeMap<>(new Date212Comparator());
+    private static TreeMap<Date212, Integer> sortTreeMap = new TreeMap<>();
 
 // default constructor
     public Date212GUI() {
